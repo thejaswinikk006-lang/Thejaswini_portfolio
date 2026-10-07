@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Thejaswini KK - Software Engineer & ECE student showcasing projects, technical skills, and career milestones." />
+  <title>Thejaswini KK | Software Engineer Portfolio</title>
+
+  <!-- ========================================================= -->
+  <!-- MODERN TYPOGRAPHY & STYLESHEET                            -->
+  <!-- ========================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- HEADER & NAVIGATION                                      -->
+  <!-- ========================================================= -->
+  <header class="site-header" role="banner">
+    <!-- Brand / Logo -->
+    <div class="logo">
+      <a href="#hero" class="logo-link">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">Thejaswini KK</span>
+      </a>
+    </div>
+
+    <!-- Hamburger toggle (mobile only) -->
+    <button
+      class="nav-toggle-btn"
+      id="nav-toggle-btn"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >☰</button>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+        <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li class="nav-item"><a href="#chat" class="nav-link">Chat</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ======================================================= -->
+    <!-- NIGHT MODE / DARK MODE TOGGLE                           -->
+    <!-- Uses CSS media queries (prefers-color-scheme) & JS sync -->
+    <!-- ======================================================= -->
+    <div class="theme-toggle-wrapper">
+      <button 
+        id="theme-toggle" 
+        class="modern-toggle-btn" 
+        type="button" 
+        aria-label="Toggle night mode" 
+        aria-pressed="false"
+        title="Toggle Night / Light Mode"
+      >
+        <span class="toggle-switch-pill">
+          <span class="toggle-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="toggle-icon moon-icon" aria-hidden="true">🌙</span>
+        </span>
+        <span id="theme-toggle-label" class="toggle-label-text">Theme</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                    -->
+  <!-- ========================================================= -->
+  <main class="main-content" id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- 1. HERO SECTION                                         -->
+    <!-- Modern tech aesthetic with ambient glow, greeting,       -->
+    <!-- tagline, skill pills, action CTAs, and profile card      -->
+    <!-- ======================================================= -->
+    <section id="hero" class="section hero-section" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <!-- Left Column: Content & CTAs -->
+        <div class="hero-content">
+          <div class="availability-badge">
+            <span class="status-dot-pulse" aria-hidden="true"></span>
+            <span>Available for Opportunities &amp; Projects</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Hi, I'm <span class="gradient-text">Thejaswini KK</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Aspiring Software Engineer &amp; Electronics undergrad specializing in <strong>C, Python, Embedded Systems</strong>, and connected <strong>IoT solutions</strong>. Passionate about bridging hardware intelligence with scalable modern software.
+          </p>
+
+          <!-- Focus Tech Pills -->
+          <div class="hero-tech-pills" aria-label="Key Specializations">
+            <span class="tech-pill">⚡ Embedded Systems</span>
+            <span class="tech-pill">🐍 Python &amp; C</span>
+            <span class="tech-pill">📡 IoT Architecture</span>
+            <span class="tech-pill">🔧 Microcontrollers</span>
+          </div>
+
+          <!-- Modern Call-To-Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+            <a href="Thejaswini_KK_ATS_Resume (1).pdf" class="btn btn-outline" download>
+              <span>Download CV</span>
+              <span aria-hidden="true">&darr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Sleek Profile Card -->
+        <div class="hero-media-wrapper">
+          <div class="profile-card-container">
+            <div class="profile-card">
+              <div class="profile-img-frame">
+                <img src="resume photo.jpeg" alt="Portrait of Thejaswini KK - Software Engineer" class="profile-photo" />
+              </div>
+              <div class="profile-card-meta">
+                <div class="profile-name-tag">
+                  <span class="profile-name">Thejaswini KK</span>
+                  <span class="profile-role">Software Engineer / ECE</span>
+                </div>
+                <span class="profile-badge-pill">3rd Sem • CGPA 7.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 2. ABOUT ME SECTION PLACEHOLDER                         -->
+    <!-- Detailed biography, background, philosophy & education   -->
+    <!-- ======================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="section-header">
+        <h2 id="about-heading" class="section-title">About Me</h2>
+        <p class="section-subtitle">A brief look into my background, interests, and engineering journey.</p>
+      </div>
+
+      <!-- 
+        About Me Section Content:
+        - Bio summary describing engineering pursuits
+        - Highlights of career / academic journey
+      -->
+      <div class="about-content">
+        <div class="about-bio">
+          <p>
+            <!-- Bio text placeholder -->
+            Currently pursuing B.E. in Electronics and Communication Engineering (3rd Semester) with a strong foundation in C and Python programming. Driven by curiosity in smart hardware, microcontrollers, and automation systems.
+          </p>
+          <p>
+            <!-- Philosophy / Personal interests placeholder -->
+            Eager to combine software engineering concepts with practical electronics to build impactful, real-world solutions.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <!-- Highlights card / grid placeholder -->
+          <ul class="highlights-list">
+            <li><strong>Degree:</strong> B.E. Electronics &amp; Communication Engineering (CGPA: 7.0)</li>
+            <li><strong>Focus:</strong> Embedded Systems, IoT, C/Python Development</li>
+            <li><strong>Languages:</strong> English, Kannada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 3. SKILLS SECTION PLACEHOLDER                           -->
+    <!-- Core competencies: languages, tools, frameworks, and    -->
+    <!-- hardware skills with progress bars or badge placeholders -->
+    <!-- ======================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <h2 id="skills-heading" class="section-title">Skills &amp; Competencies</h2>
+        <p class="section-subtitle">Technologies, programming languages, and engineering tools I work with.</p>
+      </div>
+
+      <!-- 
+        Skills Grid / Categorized Lists:
+        - Programming Languages (C, Python)
+        - Core Areas (Embedded Systems, IoT, Digital Electronics)
+        - Tools & Practices (Git, Microcontroller Programming, Problem Solving)
+      -->
+      <div class="skills-grid">
+        <article class="skills-card">
+          <h3 class="skills-category-title">Programming Languages</h3>
+          <!-- Placeholder for language badges or progress bars -->
+          <ul class="skills-list">
+            <li>C Programming <!-- <div class="progress-bar-placeholder"></div> --></li>
+            <li>Python <!-- <div class="progress-bar-placeholder"></div> --></li>
+          </ul>
+        </article>
+
+        <article class="skills-card">
+          <h3 class="skills-category-title">Embedded &amp; Electronics</h3>
+          <!-- Placeholder for hardware & core skills -->
+          <ul class="skills-list">
+            <li>Embedded Systems Fundamentals</li>
+            <li>IoT &amp; Sensor Interfacing</li>
+            <li>Digital Electronics &amp; Circuit Fundamentals</li>
+          </ul>
+        </article>
+
+        <article class="skills-card">
+          <h3 class="skills-category-title">Tools &amp; Methodologies</h3>
+          <!-- Placeholder for development tools -->
+          <ul class="skills-list">
+            <li>Git &amp; Version Control</li>
+            <li>Hardware Debugging &amp; Simulation</li>
+            <li>Problem Solving &amp; Team Collaboration</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4. TIMELINE / EXPERIENCE SECTION PLACEHOLDER            -->
+    <!-- Chronological milestones: education, roles, projects    -->
+    <!-- ======================================================= -->
+    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-heading">
+      <div class="section-header">
+        <h2 id="timeline-heading" class="section-title">Timeline &amp; Milestones</h2>
+        <p class="section-subtitle">Chronological record of education, achievements, and career path.</p>
+      </div>
+
+      <!-- 
+        Timeline Container:
+        - Interactive milestone cards with dates, titles, and descriptions
+        - Suitable for vertical or horizontal timeline rendering with smooth hover effects
+      -->
+      <div class="timeline-container">
+        <!-- Milestone 1 -->
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <header class="timeline-item-header">
+              <h3 class="timeline-title">B.E. in Electronics &amp; Communication Engineering</h3>
+              <time datetime="2025" class="timeline-period">2025 – Present</time>
+            </header>
+            <p class="timeline-organization">Engineering Degree (Currently in 3rd Semester)</p>
+            <p class="timeline-description">Focusing on C, Python, microcontrollers, and communication fundamentals.</p>
+          </div>
+        </article>
+
+        <!-- Milestone 2 -->
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <header class="timeline-item-header">
+              <h3 class="timeline-title">Pre-University Course (2nd PUC)</h3>
+              <time datetime="2025" class="timeline-period">RR Institution</time>
+            </header>
+            <p class="timeline-organization">Higher Secondary Education - 70%</p>
+          </div>
+        </article>
+
+        <!-- Milestone 3 -->
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <header class="timeline-item-header">
+              <h3 class="timeline-title">Secondary School Leaving Certificate (SSLC)</h3>
+              <time datetime="2023" class="timeline-period">JVS</time>
+            </header>
+            <p class="timeline-organization">10th Grade - 90%</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 5. PROJECTS SECTION PLACEHOLDER                         -->
+    <!-- Featured engineering projects with clickable thumbnails -->
+    <!-- ======================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Highlights of software, IoT, and embedded systems engineering work.</p>
+      </div>
+
+      <!-- 
+        Projects Grid:
+        - Clickable project cards with thumbnails
+        - Technology tags, descriptions, and source/demo links
+      -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumbnail-wrapper">
+            <!-- Clickable thumbnail placeholder -->
+            <a href="#" class="project-thumbnail-link" aria-label="View IoT-Based Smart Home Monitoring System details">
+              <div class="thumbnail-placeholder" aria-hidden="true">[Project Thumbnail 1]</div>
+            </a>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">IoT-Based Smart Home Monitoring System</h3>
+            <p class="project-description">
+              A microcontroller-based solution designed to track home parameters such as temperature, light, and motion using sensors for real-time status notifications and automation.
+            </p>
+            <ul class="project-tech-tags" aria-label="Technologies used">
+              <li class="tech-tag">C / Python</li>
+              <li class="tech-tag">IoT Sensors</li>
+              <li class="tech-tag">Microcontrollers</li>
+            </ul>
+            <footer class="project-links">
+              <a href="#" class="project-btn" target="_blank" rel="noopener noreferrer">View Details</a>
+              <a href="#" class="project-btn" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-thumbnail-wrapper">
+            <!-- Clickable thumbnail placeholder -->
+            <a href="#" class="project-thumbnail-link" aria-label="View Project 2 details">
+              <div class="thumbnail-placeholder" aria-hidden="true">[Project Thumbnail 2]</div>
+            </a>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Software Engineering Portfolio</h3>
+            <p class="project-description">
+              A personal portfolio web application built with semantic HTML5, CSS design systems, and responsive layout to showcase software engineering milestones.
+            </p>
+            <ul class="project-tech-tags" aria-label="Technologies used">
+              <li class="tech-tag">HTML5</li>
+              <li class="tech-tag">CSS3</li>
+              <li class="tech-tag">JavaScript</li>
+            </ul>
+            <footer class="project-links">
+              <a href="#" class="project-btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" class="project-btn" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </footer>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 6. EMBEDDED YOUTUBE VIDEO SECTION PLACEHOLDER           -->
+    <!-- Responsive video highlight or introductory presentation -->
+    <!-- ======================================================= -->
+    <section id="video" class="section video-section" aria-labelledby="video-heading">
+      <div class="section-header">
+        <h2 id="video-heading" class="section-title">Featured Video</h2>
+        <p class="section-subtitle">Video introduction, project demo, or portfolio walkthrough.</p>
+      </div>
+
+      <!-- 
+        Video Embed Container:
+        - Responsive aspect ratio wrapper (16:9)
+        - iframe placeholder for YouTube video
+        - Caption explaining the video content
+      -->
+      <div class="video-container">
+        <div class="video-responsive-wrapper">
+          <!-- 
+            YouTube iframe placeholder:
+            Replace 'VIDEO_ID' with actual YouTube video ID when embedding
+          -->
+          <div class="video-embed-placeholder" aria-label="Embedded YouTube video placeholder">
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Portfolio Introduction Video" allowfullscreen></iframe> -->
+            <p>[YouTube Video Embed Placeholder - 16:9 Aspect Ratio]</p>
+          </div>
+        </div>
+        <figcaption class="video-caption">
+          Project demonstration and engineering showcase video.
+        </figcaption>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 7. TESTIMONIALS SECTION PLACEHOLDER                     -->
+    <!-- Quotes & feedback from professors, mentors, or peers     -->
+    <!-- ======================================================= -->
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="section-header">
+        <h2 id="testimonials-heading" class="section-title">Testimonials</h2>
+        <p class="section-subtitle">What professors, mentors, and teammates say about working with me.</p>
+      </div>
+
+      <!-- 
+        Testimonials Grid:
+        - Cards with rounded corners, subtle drop shadows, and quote formatting
+      -->
+      <div class="testimonials-grid">
+        <!-- Testimonial Card 1 -->
+        <article class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            "Thejaswini demonstrated exceptional problem-solving and eagerness to learn during our IoT system development sessions."
+          </blockquote>
+          <footer class="testimonial-author">
+            <cite class="author-name">— Academic Mentor</cite>
+            <span class="author-role">ECE Department</span>
+          </footer>
+        </article>
+
+        <!-- Testimonial Card 2 -->
+        <article class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            "A collaborative and dependable team player with strong core programming abilities in C and Python."
+          </blockquote>
+          <footer class="testimonial-author">
+            <cite class="author-name">— Project Teammate</cite>
+            <span class="author-role">Peer Review</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 8. AI CHAT INTERFACE SECTION PLACEHOLDER                -->
+    <!-- Interactive chat window for visitors to talk with an AI  -->
+    <!-- version of the software engineer                        -->
+    <!-- ======================================================= -->
+    <section id="chat" class="section chat-section" aria-labelledby="chat-heading">
+      <div class="section-header">
+        <h2 id="chat-heading" class="section-title">Chat with My AI Assistant</h2>
+        <p class="section-subtitle">Ask questions about my background, skills, and projects in real time.</p>
+      </div>
+
+      <!-- 
+        AI Chat Window Interface Placeholder:
+        - Chat display area (message history)
+        - User input text field and submit/send button
+        - Location for future AI API integration (e.g., OpenAI API)
+      -->
+      <div class="chat-window-container">
+        <div class="chat-header">
+          <span class="chat-status-dot" aria-hidden="true"></span>
+          <span class="chat-bot-name">Thejaswini AI Assistant</span>
+        </div>
+
+        <div class="chat-messages-area" id="chat-messages" aria-live="polite">
+          <!-- Bot greeting message placeholder -->
+          <div class="chat-message bot-message">
+            <p>Hi there! I am Thejaswini's virtual assistant. Ask me anything about her skills, projects, or background!</p>
+          </div>
+        </div>
+
+        <form class="chat-input-form" id="chat-form" action="#" onsubmit="return false;">
+          <label for="chat-user-input" class="visually-hidden">Type your message</label>
+          <input 
+            type="text" 
+            id="chat-user-input" 
+            name="chat-user-input" 
+            placeholder="Type a message... (e.g. 'What projects have you worked on?')" 
+            autocomplete="off" 
+          />
+          <button type="submit" id="chat-send-btn" class="btn btn-chat-send">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 9. CONTACT SECTION PLACEHOLDER                          -->
+    <!-- Contact form with API integration point & direct links   -->
+    <!-- ======================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have a question, collaboration idea, or opportunity? Let's connect!</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Direct contact details -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <ul class="contact-details-list">
+            <li>
+              <strong>Email:</strong> 
+              <a href="mailto:thejaswinikk006@gmail.com">thejaswinikk006@gmail.com</a>
+            </li>
+            <li>
+              <strong>Phone:</strong> 
+              <a href="tel:+917892645750">+91 7892645750</a>
+            </li>
+            <li>
+              <strong>Location:</strong> Karnataka, India
+            </li>
+          </ul>
+        </div>
+
+        <!-- 
+          Contact Form Placeholder:
+          - Form fields: Name, Email, Message
+          - High-contrast submit button
+          - Integration hook for email services (e.g., Resend API, Formspree, EmailJS)
+          - Submission confirmation message placeholder
+        -->
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+          <!-- 
+            [API Integration Note]:
+            Attach a JavaScript listener or form action to send submissions
+            via an email API such as Resend API or Formspree.
+          -->
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" required placeholder="Jane Doe" />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" name="email" required placeholder="jane@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+          </div>
+
+          <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-submit">
+            Send Message
+          </button>
+
+          <!-- Form confirmation message placeholder -->
+          <div id="contact-status-message" class="form-status-message" aria-live="polite">
+            <!-- Status messages (Success / Error) will appear here -->
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- Semantic footer with copyright, back-to-top, and social  -->
+  <!-- media profile links placeholder adhering to accessibility -->
+  <!-- ========================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <p>&copy; <time datetime="2026">2026</time> Thejaswini KK. All rights reserved.</p>
+        <p class="footer-tagline">Built with semantic HTML &amp; modern web standards.</p>
+      </div>
+
+      <!-- Social media links placeholder -->
+      <nav class="footer-social-nav" aria-label="Social Media Links">
+        <ul class="social-links-list">
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <span class="social-icon" aria-hidden="true">[LinkedIn]</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <span class="social-icon" aria-hidden="true">[GitHub]</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:thejaswinikk006@gmail.com" aria-label="Send an email to Thejaswini KK">
+              <span class="social-icon" aria-hidden="true">[Email]</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Back to top navigation -->
+      <div class="footer-back-to-top">
+        <a href="#hero" class="back-to-top-link">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT SCRIPTS                                        -->
+  <!-- ========================================================= -->
+  <script src="theme.js"></script>
+  <script src="interactions.js"></script>
+
+</body>
+</html>
